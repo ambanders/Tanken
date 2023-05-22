@@ -30,7 +30,15 @@ p{
 /* KLASSER */
 
 
+.blue_box{
+    background-color: blue;
+    color: white;
+}
 
+.flexcontainer{
+    display: flex;
+    width: 100%;
+}
 
 
 
@@ -46,7 +54,10 @@ p{
 /* INDEX */ 
 
 
-
+.pizza_nyhed div{
+    width: 50%;
+    background-color: aquamarine;
+}
 
 
 
