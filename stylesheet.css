@@ -1,3 +1,24 @@
+*
+/* FONTS */
+
+h1{
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;     
+}
+
+h2{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p{
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 
 
 /* GENERELT */
