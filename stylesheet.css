@@ -1,4 +1,13 @@
-*
+/* GENERELT */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 /* FONTS */
 
 h1{
@@ -17,21 +26,73 @@ p{
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
+    text-align: left;
+    font-size: 130%;
+    line-height: 140%;
 }
 
 
 
-/* GENERELT */
 
+
+
+/* KNAPPER */ 
+
+    .whitebutton{
+        border: 2px solid #ffffff;
+        background-color: #1414DB;
+        color: white; 
+    }
+
+    .bluebutton{
+        border: 2px solid #1414DB;
+        background-color: #ffffff;
+        color: #1414DB;
+    }
+
+    .bluebutton::before{
+        background-color: #1414DB;
+        color: #ffffff;
+    }
+
+
+    button{
+        padding: 10px;
+        font-size: 15px;
+        outline: none;
+        position: relative;
+        letter-spacing: 1px;
+        margin-right: 4%;
+    }
+   
+    button::before{
+        content: 'Button';
+        /*Button's value/text-content */
+        position: absolute;
+        top: -14%;
+        left: -7%;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100%;
+        color: #1414db;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.15s ease-in-out;
+        font-weight: bold;
+    }
+   
+   button:hover::before{
+    top: 0;
+    left: 0;
+}
 
 
 
 
 /* KLASSER */
-
-
 .blue_box{
-    background-color: blue;
+    background-color: #1414DB;
     color: white;
 }
 
@@ -40,7 +101,23 @@ p{
     width: 100%;
 }
 
+.max_img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
+.center{
+    justify-content: center;
+}
+
+.align_right{
+    text-align: right;
+}
+
+
+.container_overlap{
+    position: relative;
+}
 
 
 
@@ -52,12 +129,163 @@ p{
 
 
 /* INDEX */ 
-
-
-.pizza_nyhed div{
-    width: 50%;
-    background-color: aquamarine;
+/* Index første sektion */
+/* - højre side - */  
+#index_top div:last-child{
+    width: 45%;
+    padding-bottom: 2%;  
 }
+
+#index_top div:last-child img{
+    margin-top: 9%;
+    width: 97%;  
+    margin-bottom: 2%;
+}
+
+#index_top div:last-child h1, #index_top div:last-child p{
+    text-align: right;
+    padding-right: 3%;
+}
+
+/* - venstre side - */
+#index_top div:first-child{
+    text-align: right;
+    padding-right: 3%;
+    width: 55%;
+    padding-bottom: 15%;
+}
+
+#index_top div:first-child h1{
+    padding-top: 18%;
+    font-size: 450%;
+    line-height: 130%;
+    letter-spacing: 5px;
+    padding-bottom: 10%;
+}
+
+#index_logobox div:first-child{
+    width: 20%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#index_logobox div:last-child{
+    width: 80%;
+}
+
+
+/* Index PIZZA sektion */
+/* Nyhed overskrift */ 
+#overskrift_nyhed{
+    font-size: 300%;
+    margin-right: 8%;
+    margin-top: 5%;
+}
+
+/* - højre side - */ 
+    #pizzanews div{
+        margin-top: 6%;  
+    }
+
+    #pizzanews div:last-child{
+        width: 30%;  
+    }
+
+/* - venstre side - */ 
+#pizzanews div:first-child{
+    margin-right: 10%;
+    padding-top: 5%;
+}
+
+#pizzanews div:first-child button{
+    margin-top: 8%;
+    margin-left: 2%; 
+}
+
+
+
+/* Index #TANKENDERTÆLLER sektion */
+/* højre side */
+#TANKENDERTÆLLER{
+    padding: 3%;
+    margin-top: 8%;
+}
+
+#TANKENDERTÆLLER div:last-child{
+    width: 30%;
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 10%;
+}
+
+/* venstre side */
+#TANKENDERTÆLLER div:first-child{
+    width: 80%;
+    margin-right: 30%;
+    margin-left: 13%;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    padding-left: 3%;  
+}
+
+
+/* Index Bollekort sektion */
+/* overskrift */ 
+#overskrift_bollekort{
+    font-size: 300%;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+/* højre side */
+#bollekort{
+    padding-left: 10%;
+    margin-bottom: 10%;
+}
+
+#bollekort div:first-child{ 
+    width: 35%;
+    margin-top: 7%;
+}
+
+/* venstre side */
+#bollekort div:nth-child(2){
+    margin-top: 35%;
+    width: 40%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    padding-left: 3%; 
+}
+
+#bollekort div:last-child{
+    position: absolute;
+    width: 15%;
+    margin-left: 63%;
+    margin-top: 26%;
+}
+
+/* Index Instagram sektion */
+
+
+/* højre side */ 
+
+
+/* venstre side */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

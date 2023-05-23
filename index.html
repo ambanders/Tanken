@@ -27,40 +27,50 @@
 
 <main>
 
-    <section class="flexcontainer">
+    <section>
 
-            <div class="blue_box">
-                <h1> 
-                    TANKEN 
-                    <br>
-                    Aarhus C 
-                </h1>
+        <div class="flexcontainer" id="index_top">
+
+                <div class="blue_box flexcontainer" id="index_logobox">
+
+                    <div>
+                        <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
+                    </div>
+
+                    <div>
+                        <h1 class="align_right"> 
+                            TANKEN 
+                            <br>
+                            Aarhus C 
+                            <br>
+                            Graven
+                            <br>
+                            26
+                        </h1>
+                        <button class="whitebutton" onclick=" window.open('http://google.com','_blank')"> Om os </button>
+                    </div>
+                </div>  
     
-                <p>
-                    Det er nu muligt at nyde din yndlingspizza på TANKEN.
-                    <br> 
-                    I samarbejde med vores nabo Mefisto, er drømme gået 
-                    <br>
-                    i opfyldelse. Fremadrettet kan du bestille friskbagt 
-                    <br>
-                    pizza, og den bliver leveret lige til dig på Tanken. 
-                </p>
-    
-                <a href="om.html"> Læs mere</a>
-            </div>  
-    
-            <div>
-                <img class="max_img" src="images/pizza.png" alt="Pizza Illustration">
-            </div>
+                <div>
+                    <img class="max_img" src="images/forside.jpg" alt="Forside Billede">
+
+                    <p> Åben nu </p>
+                    <h1> 
+                        søn - ons 09:00 - 22:00 
+                        <br>
+                        fre - lør 09:00 - sent
+                    </h1>
+                </div>
+           
         </div>
-    
+   
     
     </section>
 
-<section >
-    <h1> Nyhed </h1>
+    <section>
+    <h1 class="align_right" id="overskrift_nyhed"> Nyhed </h1>
 
-    <div class="flexcontainer pizza_nyhed">
+    <div class="flexcontainer center" id="pizzanews">
         <div>
             <h2> 
                 TANKEN samarbejder med 
@@ -78,7 +88,7 @@
                 pizza, og den bliver leveret lige til dig på Tanken. 
             </p>
 
-            <a href="om.html"> Læs mere</a>
+            <button class="bluebutton" onclick=" window.open('http://google.com','_blank')"> Læs mere </button>
         </div>  
 
         <div>
@@ -89,7 +99,7 @@
 
 </section>
 
-<section class="flexcontainer">
+<section class="flexcontainer overlap center" id="TANKENDERTÆLLER">
     <div class="blue_box">
         <h2> #TANKENDERTÆLLER </h2>
 
@@ -100,7 +110,15 @@
             <br>
             i opfyldelse. Fremadrettet kan du bestille friskbagt 
             <br>
-            pizza, og den bliver leveret lige til dig på Tanken. 
+            pizza, og den bliver leveret lige til dig på Tanken.
+            <br> 
+            Det er nu muligt at nyde din yndlingspizza på TANKEN.
+            <br> 
+            I samarbejde med vores nabo Mefisto, er drømme gået 
+            <br>
+            i opfyldelse. Fremadrettet kan du bestille friskbagt 
+            <br>
+            pizza, og den bliver leveret lige til dig på Tanken.
         </p>
     </div>  
 
@@ -110,9 +128,10 @@
 
 </section>
 
-<section>
-    <h1> Tankens bollekort </h1>
+<section  >
+    <h1 class="align_left" id="overskrift_bollekort"> Tankens bollekort </h1>
 
+    <div class="flexcontainer" id="bollekort">
     <div>
         <img class="max_img" src="images/bollekort.png" alt="Bollekort">
     </div>  
@@ -132,6 +151,7 @@
     <div> 
         <img class="max_img" src="images/sticker_bollekort.png" alt="Sticker Bollekort">
     </div>
+</div>
 </section>
 
 
