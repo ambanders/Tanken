@@ -1,26 +1,43 @@
-*
-    h1{
-        font-family: bebas-neue, sans-serif;
-        font-weight: 400;
-        font-style: normal;     
-    }
-    
-    h2{
-        font-family: poppins, sans-serif;
-        font-weight: 500;
-        font-style: normal;
-    }
-    
-    p{
-        font-family: ff-dagny-web-pro, sans-serif;
-        font-weight: 100;
-        font-style:normal;
-        font-size: 13pt;
-    } 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
     
 
 /* FONTS */
+
+h1{
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;     
+}
+
+h2{
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* Orange overskrift */
+h3{
+    color:#EB7C30;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+p{
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 100;
+    font-style:normal;
+    font-size: 130%;
+    line-height: 140%;
+} 
+
+
 
 
 
@@ -46,6 +63,30 @@
     width: 100%;
 }
 
+.container_overlap{
+    position: relative;
+}
+
+.center{
+    justify-content: center;
+}
+
+.max_img{
+    max-width: 100%;
+    max-width: 100%;
+}
+
+
+
+.three_img div{
+    width: 30%;
+    margin: 5%;
+    height: 30%;
+    background-color: #EB7C30;
+
+}
+
+
 
 
 
@@ -69,79 +110,145 @@
 
 /* OM OS */
 
-
-/* videosektion */
+/* videosection */
 
 /* font */
 #videosection h1{
-    font-size: 45pt;
-    line-height: 50pt;
+    font-size: 520%;
+    
+    
 }
 
 #videosection h2{
-    font-size: 15pt;
-    line-height: 5pt;
+    font-size: 160%;
+    
 }
 
 #videosection p{
-    line-height: 18pt;
-}
-
-
-/* yderste box */
-#videosection{
-    background-color: rgb(106, 103, 103);
-
-    height: fit-content;
-    justify-content:center;
-}
-
-
-/* container til textbox og video */
-#video_boxcontainer{
-    background-color: rgb(56, 56, 135);
-
-    width: 80%;   
-    height: 700px; 
-    position: relative; 
-    justify-content:center;
-    display: flex;
-    flex-wrap: wrap; 
-}
-
-/* box med tekst */
-#videosection_textbox{
-    background-color: rgb(24, 24, 201);
-
-    width: 70%;
+    
     text-align: left;
-    left: 0;
-    position: absolute;
-    height: 100%;
 }
 
-/* box inde i tekstbox til at holde højremargen */
-#videosection_text{
+
+#videosection{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#videocontainer{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    
+    height: 900px;
+    justify-content:left;
+    flex-wrap: wrap;
+    
+}
+
+#videocontainer div:first-child{
     width: 50%;
-    margin-left: 70px;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 15%;
+    
 }
 
 
-/* videobox med absolute for at overlappe */
-#videosection_videobox{
-    margin-top: 60px;
-    position: absolute;
-    left: 50%;
-    max-width: 800px;
-}
 
-/* video fylder 100% af videobox*/
 #video{
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    position: absolute;
+    left: 40%;
+    bottom: 15%;
+    
+}
+
+/* merchsection */
+
+
+
+
+.merchsection{
+    height: 1200px;
+    background-color: rgb(227, 227, 227);
+
+
 }
 
 
+.topsection{
+    height: 600px;
+    background-color: #bdbdbd;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.merchsection h1{
+    font-size: 400%;
+    padding-top: 5%;
+    padding-right: 15%; 
+    text-align: right;
+    margin-bottom: 5%;
+    
+}
+
+.merchsection h2{
+    font-size: 300%;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 80%;
+
+
+
+}
+
+.merchsection h3{
+    font-size: 400%;
+
+
+}
+
+.merchsection a{
+    color: black;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 100;
+    font-style:normal;
+    font-size: 130%;
+
+}
+
+#delaftanken{
+    display: flex;
+    justify-content: left;
+    text-align: right;
+    margin-top: 8%;
+}
+
+#delaftanken div:first-child{
+    width: 20%;
+
+    background-color:rgb(176, 176, 176);
+
+}
+
+
+#delaftanken div:last-child{
+    width: 60%;
+    margin-left: 3%;
+    background-color:rgb(129, 129, 129);
+}
+
+#størrelser{
+    margin-top: 3%;
+    text-align: right;
+    margin-right: 23%;
+    color:#EB7C30;
+    font-size: 120%;
+}
 
 
 
